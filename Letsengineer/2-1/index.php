@@ -6,6 +6,6 @@ $color = ["red"=>"赤","blue"=>"青","green"=>"緑"];
 echo '<br>';
 
 $color["yellow"] = "黄色";
-    var_dump($color);
+var_dump($color);
 
 ?>
