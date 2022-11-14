@@ -4,7 +4,7 @@ $fruits = ["apple" => "りんご", "orange" => "みかん","peach" => "もも"];
    
 foreach($fruits as $key => $value){
     echo $key;
-    echo "と言ったら";
+    echo "といったら";
     echo $value;
     echo '<br>';
 }
