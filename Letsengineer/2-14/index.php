@@ -36,5 +36,8 @@ echo '<br>';
 explode("/",$numbers2);
 var_dump(explode("/",$numbers2));
 
+// タイムスタンプを求める
+echo '<br>';
+echo date("Y-m-d, H:i:s", time());
 
 ?>
