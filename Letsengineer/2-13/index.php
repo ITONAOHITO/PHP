@@ -12,7 +12,7 @@ echo floor($num);
 echo '<br>';
 echo round($num);
 
-// <!-- 円周率　直径 -->
+// <!-- 円周率 直径 -->
 echo '<br>';
 function circleAround($R){
     return $R*pi();
@@ -35,7 +35,7 @@ $string2 = "文字列２";
 echo strpos($string2, "列");
 echo '<br>';
 echo mb_strpos($string2, "列"); 
-
+    
 // <!-- 文字列の切り取り -->
 echo '<br>';
 echo substr($string, 1, 1);

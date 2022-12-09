@@ -8,4 +8,12 @@ echo '<br>';
 $color["yellow"] = "黄色";
 var_dump($color);
 
+$db = ['host' => 'localhost',
+       'user' => 'root',
+       'pass' => 'root',
+       'dbname' => 'yigroupBlog'
+];
+echo $db['host'];
+
+
 ?>
