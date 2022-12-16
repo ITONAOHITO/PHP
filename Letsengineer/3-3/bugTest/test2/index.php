@@ -2,7 +2,7 @@
 require 'dbconnect.php';
 // セッション開始
 // session_start();
-include_once("dbconnect.php");
+// include_once("dbconnect.php");
 
 // エラーメッセージ、登録完了メッセージの初期化
 $errorMessage = "";
