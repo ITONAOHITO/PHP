@@ -17,16 +17,10 @@ function getUserLoginTime () {
 
 // function getUserPostData () {
     $get = new getData();
-    $getPostData = $get->getPostData();
+    // $getPostData = $get->getPostData();
     // return ;
     
-    // if ($getPostData["category_no"] === 1) {
-    //     echo "食事";
-    // }   else if ($getPostData["category_no"] === 2) {
-    //     echo "旅行";
-    // }   else {
-    //     echo "その他";
-    // }
+   
 // }
 
 
@@ -50,16 +44,30 @@ function getUserLoginTime () {
             <h1><?php echo getUserLoginTime(); ?></h1>
         </div>
     </header>
-    <div>
-        <table >
+    <div class="data">
+        <table>
             <tr class="detaName" bgcolor="#87ceeb">
                 <th>記事ID</th><th>タイトル</th><th>カテゴリ</th><th>本文</th><th>投稿日</th>
             </tr>
+            <?php foreach ($get->getPostData() as $row) : ?>
             <tr bgcolor="#e0ffff">
-                <?php while ($getPostData) {
-                    echo '<td>'.$getPostData["id"].'</td>';
-                } ?>
+               <td><?php echo $row["id"]; ?></td>
+               <td><?php echo $row["title"] ?></td>
+               <td>
+                <?php
+                    if ($row["category_no"] == 1) {
+                        echo "食事";
+                    }   else if ($row["category_no"] == 2) {
+                        echo "旅行";
+                    }   else {
+                        echo "その他";
+                    }
+                    ?>
+                </td>
+               <td><?php echo $row["comment"] ?></td>
+               <td><?php echo $row["created"] ?></td>
             </tr>
+            <?php endforeach; ?>
         </table>
     </div>
     <footer id="footer">

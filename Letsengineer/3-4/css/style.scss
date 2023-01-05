@@ -43,15 +43,18 @@ body {
 
 }
 
-table {
-    padding: 10px 0;
-
+.data{
+    margin-left: 120px;
+    table {
+        padding: 10px 0;
+        .dataName {
+            display: block;
+            background-color: #87ceeb;
+        }
+    }
 }
 
-.dataName {
-    display: block;
-    background-color: #87ceeb;
-}
+
 
 #footer {
     background-color: #00ced1;

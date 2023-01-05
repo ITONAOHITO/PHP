@@ -38,11 +38,13 @@ body {
   background-color: #00ffff;
 }
 
-table {
+.data {
+  margin-left: 120px;
+}
+.data table {
   padding: 10px 0;
 }
-
-.dataName {
+.data table .dataName {
   display: block;
   background-color: #87ceeb;
 }
