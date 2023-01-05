@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  width: 1000px;
+  height: 100%;
+}
+
+#header {
+  display: flex;
+}
+#header .img {
+  width: 200px;
+  height: 120px;
+  background-color: #add8e6;
+}
+#header .userInfo h1:nth-child(1) {
+  box-sizing: border-box;
+  padding: 15px 0;
+  font-size: 1.1rem;
+  font-weight: lighter;
+  width: 800px;
+  height: 60px;
+  text-align: end;
+  background-color: #87ceed;
+}
+#header .userInfo h1:nth-child(2) {
+  box-sizing: border-box;
+  padding: 15px 0;
+  font-size: 1.1rem;
+  font-weight: lighter;
+  width: 800px;
+  height: 60px;
+  text-align: end;
+  background-color: #00ffff;
+}
+
+table {
+  padding: 10px 0;
+}
+
+.dataName {
+  display: block;
+  background-color: #87ceeb;
+}
+
+#footer {
+  background-color: #00ced1;
+  height: 50px;
+}/*# sourceMappingURL=style.css.map */
