@@ -2,27 +2,8 @@
 require_once("pdo.php");
 require_once("getData.php");
 
-
-function getUserName () {
-    $get = new getData();
-    $getUserData = $get->getUserData();
-    return  "ようこそ　".$getUserData["last_name"].$getUserData["first_name"]."　さん";
-}
-
-function getUserLoginTime () {
-    $get = new getData();
-    $getUserData = $get->getUserData();
-    return "最終ログイン日時：".$getUserData["last_login"];
-}
-
-// function getUserPostData () {
-    $get = new getData();
-    // $getPostData = $get->getPostData();
-    // return ;
-    
-   
-// }
-
+$get = new getData();
+$getUserData = $get->getUserData();
 
 ?>
 
@@ -40,8 +21,8 @@ function getUserLoginTime () {
     <header id="header">
         <img class="img" src="1599315827_logo.png" alt="イメージ">
         <div class="userInfo">
-            <h1><?php echo getUserName(); ?></h1>
-            <h1><?php echo getUserLoginTime(); ?></h1>
+            <h1>ようこそ<?php echo $getUserData["last_name"].$getUserData["first_name"]; ?>さん</h1>
+            <h1>最終ログイン日時：<?php echo $getUserData["last_login"]; ?></h1>
         </div>
     </header>
     <div class="data">
